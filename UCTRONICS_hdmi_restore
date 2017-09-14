@@ -1,0 +1,8 @@
+
+sudo cp ./backup/config.txt /boot/config.txt
+sudo cp ./backup/kernel.img /boot/
+sudo cp ./backup/kernel7.img /boot/
+sudo cp ./backup/*.dtb /boot/
+sudo cp ./backup/overlays/*.dtb* /boot/overlays/
+sudo cp -rf ./backup/lib/* /lib/
+sudo reboot

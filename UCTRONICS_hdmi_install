@@ -1,0 +1,10 @@
+sudo cp ./uctronics_hdmi/kernel.img /boot/
+sudo cp ./uctronics_hdmi/kernel7.img /boot/
+
+sudo cp ./uctronics_hdmi/config.txt /boot/config.txt
+sudo cp ./uctronics_hdmi/*.dtb /boot/
+sudo cp ./uctronics_hdmi/overlays/*.dtb* /boot/overlays/
+sudo cp -rf ./uctronics_hdmi/lib/* /lib/
+
+sudo apt-mark hold raspberrypi-kernel
+sudo reboot
