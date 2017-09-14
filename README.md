@@ -28,7 +28,7 @@ Step5: Get run permissions
  
  > sudo chmod +x UCTRONICS_hdmi_install
  
- > sudo chmod +x UCTRONICS_LCD_restore
+ > sudo chmod +x UCTRONICS_hdmi_LCD_restore
  
 Step6: backup data
 
