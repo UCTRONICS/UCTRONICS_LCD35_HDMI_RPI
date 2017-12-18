@@ -46,6 +46,11 @@ You should recalibrate the touchscreen.
  
  > You should try reconnect the HDMI connector.
  
+ # Q6: How to write UCTRONICS HDMI LCD3 5 Screen image to the SD card Windows?
+ 
+ A6:
+ [![IMAGE ALT TEXT](https://github.com/UCTRONICS/UCTRONICS_LCD35_HDMI_RPI/blob/master/image/5.jpeg)](https://youtu.be/EmP3AQAQk2o "How to write UCTRONICS SPI LCD3 5 Screen image to the SD card Windows The Raspberry Pi Beginners Guide")
+
  
  
  
