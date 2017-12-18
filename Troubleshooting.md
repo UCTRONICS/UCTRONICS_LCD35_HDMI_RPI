@@ -51,6 +51,8 @@ You should recalibrate the touchscreen.
  A6:
  > You can refer to the below video :
  
+ Image can be downloaded from http://uctronics.oss-us-west-1.aliyuncs.com/LCD35/image/UCTRONICS_LCD35_HDMI.img
+ 
  [![IMAGE ALT TEXT](https://github.com/UCTRONICS/UCTRONICS_LCD35_HDMI_RPI/blob/master/image/5.jpeg)](https://youtu.be/EmP3AQAQk2o "How to write UCTRONICS HDMI LCD3 5 Screen image to the SD card Windows The Raspberry Pi Beginners Guide")
 
 # Q7: How to install the touchscreen driver for HDMI LCD35 
