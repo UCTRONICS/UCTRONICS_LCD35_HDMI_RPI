@@ -59,8 +59,40 @@ A7:
 
 > sudo raspi-config choose Advanced Operations -> Expand Filesystem
 >  sudo reboot
- 
- 
+
+- Step2: Update your raspberry pi system
+
+> sudo apt-get update
+
+- Step3: Download the driver package
+
+> sudo git clone https://github.com/UCTRONICS/UCTRONICS_LCD35_HDMI_RPI.git
+
+- Step4: Come in the UCTRONICS_LCD35_HDMI_RPI
+
+> cd UCTRONICS_LCD35_HDMI_RPI
+
+- Step5: Get run permissions
+
+> sudo chmod +x UCTRONICS_hdmi_backup
+> sudo chmod +x UCTRONICS_hdmi_install
+> sudo chmod +x UCTRONICS_hdmi_restore
+
+- Step6: backup data
+
+> sudo ./UCTRONICS_hdmi_backup
+
+- Step7: install our UCTRONICS LCD35 HDMI driver
+
+> sudo ./UCTRONICS_hdmi_install
+
+wait a while the system will be installed and restarted automatically.
+
+if you want to reuse the pre-installation system, you can use the below command
+
+> sudo ./UCTRONICS_hdmi_restore
+
+
  
  
  
