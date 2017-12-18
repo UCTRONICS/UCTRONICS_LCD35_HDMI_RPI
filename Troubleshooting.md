@@ -57,8 +57,8 @@ You should recalibrate the touchscreen.
 A7:
 - Step1: Expand the sd card first
 
--> sudo raspi-config choose Advanced Operations -> Expand Filesystem
--> sudo reboot
+> sudo raspi-config choose Advanced Operations -> Expand Filesystem
+>  sudo reboot
  
  
  
