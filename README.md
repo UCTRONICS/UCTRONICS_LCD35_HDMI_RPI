@@ -2,6 +2,8 @@
 
 # Any problems, please refer to our troubleshootings 
 
+https://github.com/UCTRONICS/UCTRONICS_LCD35_HDMI_RPI/blob/master/Troubleshooting.md
+
 This driver package is used for UCTRONICS 3.5 inches LCD which can run on Raspbery Pi zero Pi2 Pi3 Model B/B+ paltforms.
 
 In order to use it easier,we provide you operation steps in detail. 
