@@ -114,7 +114,7 @@ sudo nano /usr/local/share/applications/toggle-matchbox-keyboard.desktop
  X-MB-INPUT-MECHANSIM=True
  ```
  
-5. To perform the following command, note that this step must use the "PI" user permission, and if the administrator privileges are used, the file will not be found
+- 5. To perform the following command, note that this step must use the "PI" user permission, and if the administrator privileges are used, the file will not be found
 
 ```Bash
  nano ~/.config/lxpanel/LXDE-pi/panels/panel
