@@ -1,5 +1,5 @@
-# UCTRONICS_LCD35_HDMI_RPI
-
+# UCTRONICS_LCD35_HDMI_RPI (SKU: B0106)
+# This driver is used for UCTRONICS LCD35 with HDMI interface 
 # Any problems, please refer to our troubleshootings 
 
 https://github.com/UCTRONICS/UCTRONICS_LCD35_HDMI_RPI/blob/master/Troubleshooting.md
