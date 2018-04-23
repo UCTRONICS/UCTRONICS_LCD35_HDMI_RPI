@@ -4,7 +4,7 @@ echo Download OK.
 cd /home/pi/UCTRONICS_LCD35_HDMI_RPI
 echo Install calibration software for calibration...
 sudo unzip Xinput-calibrator_0.7.5-1_armhf.zip
-cd /home/pi/UCTRONICS_LCD35_RPI/xinput-calibrator_0.7.5-1_armhf/
+cd /home/pi/UCTRONICS_LCD35_HDMI_RPI/xinput-calibrator_0.7.5-1_armhf/
 sudo dpkg -i -B xinput-calibrator_0.7.5-1_armhf.deb
 echo Install calibration software OK.
 echo Install virtual keyboard...
