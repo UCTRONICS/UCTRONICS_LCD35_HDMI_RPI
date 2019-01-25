@@ -25,6 +25,8 @@ sudo ./UCTRONICS_LCD_backup
 echo Back up OK.
 echo Installing the LCD35 HDMI touchscreen driver, please waiting...
 sudo ./UCTRONICS_hdmi_install
+sudo cp /home/pi/UCTRONICS_LCD35_HDMI_RPI/uctronics_hdmi/kernel_558.img /boot/kernel.img
+sudo cp /home/pi/UCTRONICS_LCD35_HDMI_RPI/uctronics_hdmi/kernel7_558.img /boot/kernel7.img
 echo Install OK
 echo Now ,the system will reboot, please waiting ...
 
