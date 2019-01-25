@@ -9,15 +9,9 @@ sudo chmod +x install
 ```Bash
 sudo ./install 
 ```
-### For UC430:
+### If you are using the old version UC430, you should run the below command to support it.
 ```bash
  sudo cp /home/pi/UCTRONICS_LCD35_HDMI_RPI/uctronics_hdmi/kernel_uc430.img /boot/kernel.img
  sudo cp /home/pi/UCTRONICS_LCD35_HDMI_RPI/uctronics_hdmi/kernel7_uc430.img /boot/kernel7.img
- sudo reboot
-```
-### For UC558:
-```bash
- sudo cp /home/pi/UCTRONICS_LCD35_HDMI_RPI/uctronics_hdmi/kernel_558.img /boot/kernel.img
- sudo cp /home/pi/UCTRONICS_LCD35_HDMI_RPI/uctronics_hdmi/kernel7_558.img /boot/kernel7.img
  sudo reboot
 ```
