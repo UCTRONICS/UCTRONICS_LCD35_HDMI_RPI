@@ -17,7 +17,7 @@ sudo ./install
 ```
 ### For UC558:
 ```bash
- sudo cp /home/pi/UCTRONICS_LCD35_HDMI_RPI/uctronics_hdmi/kernel_uc558.img /boot/kernel.img
- sudo cp /home/pi/UCTRONICS_LCD35_HDMI_RPI/uctronics_hdmi/kernel7_uc558.img /boot/kernel7.img
+ sudo cp /home/pi/UCTRONICS_LCD35_HDMI_RPI/uctronics_hdmi/kernel_558.img /boot/kernel.img
+ sudo cp /home/pi/UCTRONICS_LCD35_HDMI_RPI/uctronics_hdmi/kernel7_558.img /boot/kernel7.img
  sudo reboot
 ```
