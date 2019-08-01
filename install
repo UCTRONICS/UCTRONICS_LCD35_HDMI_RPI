@@ -7,7 +7,6 @@ sudo cp /home/pi/UCTRONICS_LCD35_HDMI_RPI/toggle-matchbox-keyboard.sh /usr/bin/
 sudo chmod +x /usr/bin/toggle-matchbox-keyboard.sh
 sudo mkdir /usr/local/share/applications
 sudo cp /home/pi/UCTRONICS_LCD35_HDMI_RPI/toggle-matchbox-keyboard.desktop /usr/local/share/applications/
-sudo chmod 777 /home/pi/.config/lxpanel/LXDE-pi/panels/panel
 sudo cp /home/pi/UCTRONICS_LCD35_HDMI_RPI/panel /home/pi/.config/lxpanel/LXDE-pi/panels/panel
 echo Install virtual keyboard OK.
 cd /home/pi/UCTRONICS_LCD35_HDMI_RPI
