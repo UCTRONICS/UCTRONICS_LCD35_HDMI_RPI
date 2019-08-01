@@ -1,12 +1,6 @@
 echo Downloading UCTRONICS_LCD35_HDMI_RPI library, please waiting...
 sudo git clone https://github.com/UCTRONICS/UCTRONICS_LCD35_HDMI_RPI.git
 echo Download OK.
-cd /home/pi/UCTRONICS_LCD35_HDMI_RPI
-echo Install calibration software for calibration...
-sudo unzip Xinput-calibrator_0.7.5-1_armhf.zip
-cd /home/pi/UCTRONICS_LCD35_HDMI_RPI/xinput-calibrator_0.7.5-1_armhf/
-sudo dpkg -i -B xinput-calibrator_0.7.5-1_armhf.deb
-echo Install calibration software OK.
 echo Install virtual keyboard...
 sudo apt-get install matchbox-keyboard
 sudo cp /home/pi/UCTRONICS_LCD35_HDMI_RPI/toggle-matchbox-keyboard.sh /usr/bin/
@@ -21,13 +15,10 @@ sudo chmod 777 UCTRONICS_hdmi_backup
 sudo chmod 777 UCTRONICS_hdmi_restore
 sudo chmod 777 UCTRONICS_hdmi_install
 echo Backing up data, please waiting...
-sudo ./UCTRONICS_LCD_backup
+sudo ./UCTRONICS_hdmi_backup
 echo Back up OK.
 echo Installing the LCD35 HDMI touchscreen driver, please waiting...
 sudo ./UCTRONICS_hdmi_install
-sudo cp /home/pi/UCTRONICS_LCD35_HDMI_RPI/uctronics_hdmi/kernel.img /boot/kernel.img
-sudo cp /home/pi/UCTRONICS_LCD35_HDMI_RPI/uctronics_hdmi/kernel7.img /boot/kernel7.img
-sudo cp /home/pi/UCTRONICS_LCD35_HDMI_RPI/uctronics_hdmi/kernel7l.img /boot/kernel7l.img
 echo Install OK
 echo Now ,the system will reboot, please waiting ...
 
