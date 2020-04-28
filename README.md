@@ -15,7 +15,8 @@ cd UCTRONICS_LCD35_HDMI_RPI/Raspbian/
 sed -i -e 's/\r$//' *.sh
 chmod +x *.sh
 ```
-- Step4: install the driver 
+- Step4: install the driver
+ 
 ![image](Raspbian/data/3.png)
 - Rotation 0
 ```bash
