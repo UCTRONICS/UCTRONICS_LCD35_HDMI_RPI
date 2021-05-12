@@ -26,5 +26,15 @@ sudo ./install_uc_touch_0.sh
 ```bash
 sudo ./install_uc_touch_180.sh
 ```
+# Octoprint
+```bash
+cd UCTRONICS_HSLCD35/Octoprint
+```
+```bash
+sudo chmod +x UCTRONICS_HSLCD35_SHOW
+```
+```bash
+sudo ./UCTRONICS_HSLCD35_SHOW
+```
 - Notice: When the rotation button is pressed, the touch driver does not support synchronous rotation.
   You should install the touch driver mannually.
