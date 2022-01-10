@@ -43,7 +43,10 @@ sudo ./calibrateToolInstall.sh
 ./calibration_uc_touch_180.sh /dev/input/event1
 ```
 
-- Note: /dev/input/event1 is the input node of the touch screen, the user needs to view his own touch screen input node.
+- Note: 
+```bash
+/dev/input/event1 is the input node of the touch screen, the user needs to view his own touch screen input node
+```
 
 - Step3: Tap the five dots on the screen in sequence and wait for the restart
 
