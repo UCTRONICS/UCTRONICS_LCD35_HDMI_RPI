@@ -40,7 +40,7 @@ sudo ./calibrateToolInstall.sh
 ```
 - Rotation 180
 ```bash
-./calibration_uc_touch_180.sh /dev/input/event1
+sudo ./calibration_uc_touch_180.sh /dev/input/event1
 ```
 
 - Note: 
