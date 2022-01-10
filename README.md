@@ -26,6 +26,27 @@ sudo ./install_uc_touch_0.sh
 ```bash
 sudo ./install_uc_touch_180.sh
 ```
+## Touch screen calibration
+
+- Step1: Install calibration software
+```bash
+sudo ./calibrateToolInstall.sh
+```
+
+- Step2: Calibration screen
+- Rotation 0
+```bash
+./calibration_uc_touch_0.sh /dev/input/event1
+```
+- Rotation 180
+```bash
+./calibration_uc_touch_180.sh /dev/input/event1
+```
+
+- Note: /dev/input/event1 is the input node of the touch screen, the user needs to view his own touch screen input node.
+
+- Step3: Tap the five dots on the screen in sequence and wait for the restart
+
 # Octoprint
 ```bash
 cd UCTRONICS_HSLCD35/Octoprint

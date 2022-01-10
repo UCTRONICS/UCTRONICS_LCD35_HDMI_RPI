@@ -1,55 +1,66 @@
+/*
+ * Generic Device Tree overlay for the ADS7846 touch controller
+ *
+ */
+
 /dts-v1/;
+/plugin/;
 
 / {
 	compatible = "brcm,bcm2835\0brcm,bcm2708\0brcm,bcm2709";
 
 	fragment@0 {
-		target = < 0xdeadbeef >;
-
+		target = <&spi0>;
 		__overlay__ {
 			status = "okay";
-
-			spidev@0 {
-				status = "disabled";
-			};
-
-			spidev@1 {
-				status = "disabled";
-			};
 		};
 	};
 
 	fragment@1 {
-		target = < 0xdeadbeef >;
-
+		target = <&spidev0>;
 		__overlay__ {
-			#address-cells = < 0x01 >;
-			#size-cells = < 0x00 >;
-		    tft35a:tft35a@0 {
+			status = "disabled";
+		};
+	};
+
+	fragment@2 {
+		target = <&spidev1>;
+		__overlay__ {
+			status = "disabled";
+		};
+	};
+
+	fragment@3 {
+		target = <&spi0>;
+		__overlay__ {
+			/* needed to avoid dtc warning */
+			#address-cells = <1>;
+			#size-cells = <0>;
+
+			ads7846: ads7846@0 {
 				compatible = "ti,ads7846";
-				reg = < 0x00 >;
-				spi-max-frequency = < 0x1e8480 >;
-				interrupts = < 0x19 0x02 >;
-				interrupt-parent = < 0xdeadbeef >;
-				pendown-gpio = < 0xdeadbeef 0x19 0x00 >;
-				ti,x-plate-ohms = [ 00 3c ];
-				ti,pressure-max = [ 00 ff ];
-        ti,swap-xy;
-				ti,x-min = [ 0F 28 ];
-				ti,y-max = [ 0F 60 ];
-				ti,x-max = [ 01 0c ];
-				ti,y-min = [ 00 E3 ];
-				linux,phandle = < 0x03 >;
-				phandle = < 0x03 >;
+				reg = <0>;
+				spi-max-frequency = <2000000>;
+				interrupts = <25 2>; /* high-to-low edge triggered */
+				interrupt-parent = <&gpio>;
+				pendown-gpio = <&gpio 25 0>;
+				ti,swap-xy;
+				/* driver defaults */
+				ti,x-min = /bits/ 16 <0x0F28>;
+				ti,y-min = /bits/ 16 <0x00E3>;
+				ti,x-max = /bits/ 16 <0x010C>;
+				ti,y-max = /bits/ 16 <0x0F60>;
+				ti,pressure-min = /bits/ 16 <0>;
+				ti,pressure-max = /bits/ 16 <0xFFFF>;
+				ti,x-plate-ohms = /bits/ 16 <400>;
 			};
 		};
 	};
-	__symbols__ {
-		tft35a = "/fragment@1/__overlay__/tft35a@0";
-	};
-
-	__fixups__ {
-		spi0 = "/fragment@0:target:0\0/fragment@1:target:0";
-		gpio = "/fragment@0:target:0\0/fragment@1/__overlay__/tft35a@0:interrupt-parent:0\0/fragment@1/__overlay__/tft35a@0:pendown-gpio:0";
+	
+	__overrides__  {
+		xmin =   <&ads7846>,"ti,x-min;0";
+		ymin =   <&ads7846>,"ti,y-min;0";
+		xmax =   <&ads7846>,"ti,x-max;0";
+		ymax =   <&ads7846>,"ti,y-max;0";
 	};
 };
