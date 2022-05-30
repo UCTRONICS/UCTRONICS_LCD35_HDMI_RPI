@@ -46,10 +46,10 @@
 				pendown-gpio = <&gpio 25 0>;
 				ti,swap-xy;
 				/* driver defaults */
-				ti,x-min = /bits/ 16 <0x00E3>;
-				ti,y-min = /bits/ 16 <0x0F28>;
-				ti,x-max = /bits/ 16 <0x0F60>;
-				ti,y-max = /bits/ 16 <0x010C>;
+				ti,x-min = /bits/ 16 <0x0F60>;
+				ti,y-min = /bits/ 16 <0x010C>;
+				ti,x-max = /bits/ 16 <0x00E3>;
+				ti,y-max = /bits/ 16 <0x0F28>;
 				ti,pressure-min = /bits/ 16 <0>;
 				ti,pressure-max = /bits/ 16 <0xFFFF>;
 				ti,x-plate-ohms = /bits/ 16 <400>;
