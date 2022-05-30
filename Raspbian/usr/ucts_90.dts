@@ -44,7 +44,7 @@
 				interrupts = <25 2>; /* high-to-low edge triggered */
 				interrupt-parent = <&gpio>;
 				pendown-gpio = <&gpio 25 0>;
-				ti,swap-xy;
+				/* ti,swap-xy; */
 				/* driver defaults */
 				ti,x-min = /bits/ 16 <0x0F60>;
 				ti,y-min = /bits/ 16 <0x010C>;
