@@ -62,3 +62,8 @@ sudo ./UCTRONICS_HSLCD35_SHOW
 ```
 - Notice: When the rotation button is pressed, the touch driver does not support synchronous rotation.
   You should install the touch driver mannually.
+
+
+# compile new dtb
+
+dtc -O dtb -o ucts_90.dtb ucts_90.dts
